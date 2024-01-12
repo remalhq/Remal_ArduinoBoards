@@ -16,6 +16,6 @@ https://remal.io/remal-core/package_remalboards_index.json
 - Shabakah v4.0
 
 ### Legacy Boards
-- Shabakah Founders Edition (v3.1)
-- Atlas Founders Edition (v2)
-- Nabd Founders Edition (v3.1)
+- [Shabakah Founders Edition (v3.1)](https://remal.io/remal-boards/shabakah-v3-1/)
+- [Atlas Founders Edition (v2)](https://remal.io/remal-boards/atlas-v2/)
+- [Nabd Founders Edition (v3.1)](https://remal.io/remal-boards/nabd-v3-1/)
