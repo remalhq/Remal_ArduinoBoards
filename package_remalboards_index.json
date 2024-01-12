@@ -47,8 +47,8 @@
 				"help": { "online": "https://remal.io/quick-start/" },
 				"url": "https://github.com/remaliot/Remal_ArduinoBoards/raw/main/ArchReleases/remaliotboards_esp32_1.2.5.zip",
 				"archiveFileName": "remaliotboards_esp32_1.2.5.zip",
-				"checksum": "SHA-256:0cd789e885ba54308058423b3b2052572ea86c1e7a0732aa5a7b5912f572288e",
-				"size": "248909932",
+				"checksum": "SHA-256:e8cc5b7f1e83699032559ab8e5a4c5cf06d8398c9745201d185ed38b12d0b60c",
+				"size": "248909941",
 				"boards": [
 					{ 
 						"name": "Shabakah v4"
