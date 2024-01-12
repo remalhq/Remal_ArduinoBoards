@@ -1,17 +1,17 @@
-#
+###########################################################################
 #	Remal IoT ESP32 Boards
 #
 #	Currently supported boards are:
 #		- Shabakah Founders Edition (v3.X): ESP32-C3-MINI
 #
 #	Based on: https://github.com/espressif/arduino-esp32
-#
+###########################################################################
 
 # v1.2.4 (11 Jan 2023)
 	- Latest updates now hosted on GitHub: https://github.com/remaliot/Remal_ArduinoBoards
 	- Renamed Shabakah v3.X to Shabakah (Founders Edition)
 	- Updated core to match latest version of ESP32 tools and libraries (v2.0.14)
-	- XXX
+	- Updated "Remal_SHT3X" library to v2.0.1
 
 # v1.2.3 (31 Aug 2023)
 	- Fixed missing "Remal_BLE_Serial" library issue
@@ -46,7 +46,3 @@
 
 # v1.0.0 (21 Dec 2022)
 	- Initial release
-
-
-
-

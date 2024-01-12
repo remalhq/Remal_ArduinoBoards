@@ -16,8 +16,8 @@
 				"help": { "online": "https://remal.io/quick-start/" },
 				"url": "https://github.com/remaliot/Remal_ArduinoBoards/raw/main/ArchReleases/remaliotboards_avr_1.2.9.zip",
 				"archiveFileName": "remaliotboards_avr_1.2.9.zip",
-				"checksum": "SHA-256:63be5c8143d34e8c6523a9edbc752be6c900a4367393757d0b7e6d48467a8aed",
-				"size": "4601035",
+				"checksum": "SHA-256:ecb84a5f6a5dfb6e1491cabad10a672583bce3885e96f1905c5753a92a895e87",
+				"size": "4602011",
 				"boards": [
 					{ 
 						"name": "Nabd (Founders Edition)"
@@ -47,8 +47,8 @@
 				"help": { "online": "https://remal.io/quick-start/" },
 				"url": "https://github.com/remaliot/Remal_ArduinoBoards/raw/main/ArchReleases/remaliotboards_esp32_1.2.4.zip",
 				"archiveFileName": "remaliotboards_esp32_1.2.4.zip",
-				"checksum": "SHA-256:b3fa3eb5223023150906c9668ade15b0d84a8feb19c641f4cd8b87c8da2f808c",
-				"size": "248839752",
+				"checksum": "SHA-256:97ac5f9052f7cb2bb597e9c38d4d2f4eff925b729d4c93c9bbc6105d4c0eb9df",
+				"size": "248894224",
 				"boards": [
 					{ 
 						"name": "Shabakah (Founders Edition)" 

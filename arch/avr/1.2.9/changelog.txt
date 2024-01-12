@@ -1,15 +1,15 @@
-#
+###########################################################################
 #	Remal IoT AVR Boards
 #
 #	Currently supported boards are:
 #		- Nabd Founders Edition (v3.1): ATMEGA328p
 #		- Atlas Founders Edition (v2): ATMEGA32u4
-#
+###########################################################################
 
 # V1.2.9 (11 Jan 2024)
 	- Latest updates now hosted on GitHub: https://github.com/remaliot/Remal_ArduinoBoards
 	- Updated naming of Nabd v3.1 board to "Nabd Founders Edition" and Atlas v2 board to "Atlas Founders Edition"
-	- XXX
+	- Updated "Remal_SHT3X" library to v2.0.1
 
 # V1.2.8 (13 Aug 2023)
 	- Added new Remal IoT library for the SHT3X Temperature and Humidity Sensor "Remal_SHT3X" with example code
