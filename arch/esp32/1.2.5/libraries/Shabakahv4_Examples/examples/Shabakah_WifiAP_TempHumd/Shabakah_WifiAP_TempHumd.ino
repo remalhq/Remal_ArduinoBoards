@@ -1,20 +1,20 @@
 /**
  * @file    Shabakah_WifiAP_TempHumd.ino
  * @authors Khalid Mansoor AlAwadhi, Remal IoT
- * @date    19 July 2023
+ * @date    12 Jan 2023
  * 
  * @brief   This application serves as a straightforward web server, providing real-time temperature and humidity 
- *          data from Shabakah (Founders Edition)'s integrated Temperature/Humidity sensor.
+ *          data from Shabakah's integrated Temperature/Humidity sensor.
  *          
  *          To access this data, follow these simple steps:
- *            1- Connect to Shabakah's Wi-Fi network (Default name is "ShabakahFE-WiFi-TempHumd" and password is "12345678")
+ *            1- Connect to Shabakah's Wi-Fi network (Default name is "Shabakah-WiFi-TempHumd" and password is "12345678")
  *            2- Open a web browser and enter Shabakah's IP address, which is 192.168.4.1 without HTTP or HTTPS
  * 
  *          You'll be able to see a webpage with the current temperature and humidity readings, updated every second. 
- *          As an additional feature, the RGB LED on Shabakah blinks each time a client connects and a new reading 
- *          is obtained, signifying that the webpage has been updated.
+ *          As an additional feature, the LEDs on Shabakah blink sequentially (LED2 then LED1) each time a client 
+ *          connects and a new reading is obtained, signifying that the webpage has been updated.
  *          
- *          Make sure you select "Shabakah (Founders Edition)" under "Tools -> Boards -> Remal IoT Boards (ESP32)"
+ *          Make sure you select "Shabakah v4" under "Tools -> Boards -> Remal IoT Boards (ESP32)"
  *          and the correct port under "Tools -> Port" 
  */
 #include "Remal_SHT3X.h"
@@ -25,12 +25,12 @@
 /*#############################################
  * Shabakah Board Defines and Global Variables 
  *#############################################*/
-/* RGB LED (WS2812B) */
-const int LED_PIN = 6;                      //The pin connected to the RGB LED on Shabakah
-#define NUM_LEDS                    1       //Number of LEDs
-int LED_Brightness = 50;                    //Controls LED brightness (Range is from 0 to 255)
-int Hue = 0;                                //Controls the rotating "base color" 
-Adafruit_NeoPixel Shabakah_RGBLED(NUM_LEDS, LED_PIN, NEO_GRB + NEO_KHZ800);       //Object to control our RGB LED
+/* RGB LEDs (WS2812B) */
+const int LED_1_PIN = 1;                    //The pin connected to LED 1 on Shabakah
+const int LED_2_PIN = 3;                    //The pin connected to LED 2 on Shabakah
+const int NumLEDs = 1;                      //Number of LEDs on each pin
+Adafruit_NeoPixel Shabakah_LED_1(NumLEDs, LED_1_PIN, NEO_GRB + NEO_KHZ800);       //Object to control LED 1
+Adafruit_NeoPixel Shabakah_LED_2(NumLEDs, LED_2_PIN, NEO_GRB + NEO_KHZ800);       //Object to control LED 2
 
 /* Temp/Humd sensor */
 const int TempHumd_Addr = 0x44;             //The I2C address of the Temp/Humd sensor
@@ -49,23 +49,30 @@ void setup()
   /* Start serial communication with a baudrate of 9600 - so we can read output from the PC */
   Serial.begin(9600);
 
-  /* Initialize RGB LED */
-  Shabakah_RGBLED.begin();
-  Shabakah_RGBLED.clear();
-  Shabakah_RGBLED.show();
+  /* Initialize RGB LEDs */
+  Shabakah_LED_1.begin();
+  Shabakah_LED_1.clear();
+  Shabakah_LED_1.show();
 
-  Serial.println("> Configuring Shabakah (Founders Edition) to be an access point...");
+  Shabakah_LED_2.begin();
+  Shabakah_LED_2.clear();
+  Shabakah_LED_2.setBrightness(40);
+  Shabakah_LED_2.show();
+
+  Serial.println("> Configuring Shabakah to be an access point...");
 
   /* You can replace 'YourSSID' and 'YourPassword' with your own name and password: */
-  const char *YourSSID = "ShabakahFE-WiFi-TempHumd";          //Name of your Wi-Fi network
+  const char *YourSSID = "Shabakah-WiFi-TempHumd";          //Name of your Wi-Fi network
   const char *YourPassword = "12345678";                    //Password for your Wi-Fi network (NOTE: Minimum 8 characters!)
   
   /* Error check: */
   if(strlen(YourPassword) < 8)
   {
     Serial.println("> Wi-Fi password must be at least 8 characters! Please change it in the code and try again!");
-    Shabakah_RGBLED.setPixelColor(0, 255, 0, 0);
-    Shabakah_RGBLED.show();
+
+    /* Set LED 1 to RED to indicate error */
+    Shabakah_LED_1.setPixelColor(0, 255, 0, 0);
+    Shabakah_LED_1.show();
     while(1);
   }
 
@@ -87,6 +94,14 @@ void setup()
   if( !SHT30_Sensor.IsConnected() )
   {
     Serial.println("> Error: Could not initialize SHT30 temperature and humidity sensor!");
+
+    /* Set LED 1 to RED to indicate error */
+    Shabakah_LED_1.setPixelColor(0, 255, 0, 0);
+    Shabakah_LED_1.show();
+    while(1)
+    {
+      //Wait forever
+    }
   }
 }
 
@@ -102,9 +117,12 @@ void loop()
     Serial.println("> New client");                   //Print a message out the serial port
     String currentLine = "";                          //Create a String to hold incoming data from the client
 
-    /* Set the RGB LED to green to indicate a client is connected: */
-    Shabakah_RGBLED.setPixelColor(0, 0, 255, 0);
-    Shabakah_RGBLED.show();
+    /* Set LED 2 to GREEN to indicate a client is connected: */
+    Shabakah_LED_1.setPixelColor(0, 0, 0, 0);
+    Shabakah_LED_1.show();
+    Shabakah_LED_2.setPixelColor(0, 0, 255, 0);
+    Shabakah_LED_2.show();
+
 
     /* Loop while the client's connected: */
     while (client.connected())             
@@ -136,7 +154,7 @@ void loop()
             /* Update web page with current readings: */
             client.println("<html>");
             client.println("<head>");
-            client.println("<title>Remal IoT - Shabakah (Founders Edition) Wi-Fi + Sensor Readings Demo</title>");
+            client.println("<title>Remal IoT - Shabakah Wi-Fi + Sensor Readings Demo</title>");
             client.println("<style>");
             client.println("body {");
             client.println("    font-family: Arial, sans-serif;");
@@ -164,8 +182,8 @@ void loop()
 
             client.println("<body>");
             client.println("<div class='container'>");
-            client.println("<h1>Remal IoT - Shabakah (Founders Edition) Wi-Fi + Sensor Readings Demo</h1>");
-            client.println("<h2>This simple webpage showcases the Wi-Fi capabilities of Shabakah (Founders Edition) by continuously displaying the temperature and humidity data obtained from its built-in sensor every second</h2>");
+            client.println("<h1>Remal IoT - Shabakah Wi-Fi + Sensor Readings Demo</h1>");
+            client.println("<h2>This simple webpage showcases the Wi-Fi capabilities of Shabakah by continuously displaying the temperature and humidity data obtained from its built-in sensor every second</h2>");
             client.println("<h1> &gt;&gt; Temperature: " + String(temp) + " C</h1>");
             client.println("<h1> &gt;&gt; Humidity: " + String(hum) + " %</h1>");
             client.println("</div>");
@@ -174,9 +192,11 @@ void loop()
             client.println("</html>");
             client.println();
 
-            /* Clear LED */
-            Shabakah_RGBLED.setPixelColor(0, 0, 0, 0);
-            Shabakah_RGBLED.show();
+            /* Now clear LED 2 and set LED 1 GREEN*/
+            Shabakah_LED_2.setPixelColor(0, 0, 0, 0);
+            Shabakah_LED_2.show();
+            Shabakah_LED_1.setPixelColor(0, 0, 255, 0);
+            Shabakah_LED_1.show();
             break;
           } 
           else 
@@ -193,4 +213,10 @@ void loop()
     client.stop();
     Serial.println("> Client disconnected");
   }
+
+  /* Clear LEDs */
+  Shabakah_LED_1.setPixelColor(0, 0, 0, 0);
+  Shabakah_LED_2.setPixelColor(0, 0, 0, 0);
+  Shabakah_LED_1.show();
+  Shabakah_LED_2.show();
 }
