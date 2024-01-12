@@ -6,7 +6,7 @@ This repository contains all Remal IoT Arduino supported boards.
 2. Go to `File > Preferences`
 3. Add the following URL to `Additional Boards Manager URLs`:
 ```
-https://raw.githubusercontent.com/remaliot/Remal_ArduinoBoards/main/package_remalboards_index.json
+https://remal.io/remal-core/package_remalboards_index.json
 ```
 4. Go to `Tools > Board > Boards Manager`
 5. Search for `Remal IoT Arduino Boards` and install it
