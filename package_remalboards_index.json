@@ -16,8 +16,8 @@
 				"help": { "online": "https://remal.io/quick-start/" },
 				"url": "https://github.com/remaliot/Remal_ArduinoBoards/raw/main/ArchReleases/remaliotboards_avr_1.2.9.zip",
 				"archiveFileName": "remaliotboards_avr_1.2.9.zip",
-				"checksum": "SHA-256:276e629f053215220fd800e3abf861d47e2ec66cb34d2d0663b314858e523fd0",
-				"size": "4547432",
+				"checksum": "SHA-256:63be5c8143d34e8c6523a9edbc752be6c900a4367393757d0b7e6d48467a8aed",
+				"size": "4601035",
 				"boards": [
 					{ 
 						"name": "Nabd (Founders Edition)"
