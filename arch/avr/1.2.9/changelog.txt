@@ -6,12 +6,10 @@
 #		- Atlas Founders Edition (v2): ATMEGA32u4
 #
 
-# V1.3.0 (11 Jan 2024)
-	- Updated naming of Nabd v3.1 board to "Nabd Founders Edition" and Atlas v2 board to "Atlas Founders Edition"
-	- 
-
 # V1.2.9 (11 Jan 2024)
-	- Final version hosted on Remal's website, migrated to GitHub for future updates
+	- Latest updates now hosted on GitHub: https://github.com/remaliot/Remal_ArduinoBoards
+	- Updated naming of Nabd v3.1 board to "Nabd Founders Edition" and Atlas v2 board to "Atlas Founders Edition"
+	- XXX
 
 # V1.2.8 (13 Aug 2023)
 	- Added new Remal IoT library for the SHT3X Temperature and Humidity Sensor "Remal_SHT3X" with example code
