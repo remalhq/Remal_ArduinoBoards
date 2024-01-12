@@ -42,6 +42,62 @@
 			{
 				"name": "Remal IoT Boards (ESP32)",
 				"architecture": "esp32",
+				"version": "1.2.5",
+				"category": "Contributed",
+				"help": { "online": "https://remal.io/quick-start/" },
+				"url": "https://github.com/remaliot/Remal_ArduinoBoards/raw/main/ArchReleases/remaliotboards_esp32_1.2.5.zip",
+				"archiveFileName": "remaliotboards_esp32_1.2.5.zip",
+				"checksum": "SHA-256:567754c7211f937ecbb9b9bd7e10f6392a9f3442aecfc4957162998b557b2750",
+				"size": "248911088",
+				"boards": [
+					{ 
+						"name": "Shabakah v4"
+					}, 
+					{
+						"name": "Shabakah (Founders Edition)"
+					}
+				],
+				"toolsDependencies": [
+					{
+						"packager": "remal",
+						"name": "riscv32-esp-elf-gcc",
+						"version": "esp-2021r2-patch5-8.4.0"
+					},
+					{
+						"packager": "remal",
+						"name": "riscv32-esp-elf-gdb",
+						"version": "11.2_20220823"
+					},
+					{
+						"packager": "remal",
+						"name": "openocd-esp32",
+						"version": "v0.12.0-esp32-20230419"
+					},
+					{
+						"packager": "remal",
+						"name": "esptool_py",
+						"version": "4.5.1"
+					},
+					{
+						"packager": "remal",
+						"name": "mkspiffs",
+						"version": "0.2.3"
+					},
+					{
+						"packager": "remal",
+						"name": "mklittlefs",
+						"version": "3.0.0-gnu12-dc7f933"
+					},
+					{
+						"packager": "arduino",
+						"name": "dfu-util",
+						"version": "0.11.0-arduino5"
+					}
+				]
+			},
+			{
+				"name": "Remal IoT Boards (ESP32)",
+				"architecture": "esp32",
 				"version": "1.2.4",
 				"category": "Contributed",
 				"help": { "online": "https://remal.io/quick-start/" },
