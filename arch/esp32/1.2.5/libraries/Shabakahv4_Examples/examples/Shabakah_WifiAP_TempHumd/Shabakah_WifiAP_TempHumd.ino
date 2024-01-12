@@ -1,7 +1,7 @@
 /**
  * @file    Shabakah_WifiAP_TempHumd.ino
  * @authors Khalid Mansoor AlAwadhi, Remal IoT
- * @date    12 Jan 2023
+ * @date    12 Jan 2024
  * 
  * @brief   This application serves as a straightforward web server, providing real-time temperature and humidity 
  *          data from Shabakah's integrated Temperature/Humidity sensor.

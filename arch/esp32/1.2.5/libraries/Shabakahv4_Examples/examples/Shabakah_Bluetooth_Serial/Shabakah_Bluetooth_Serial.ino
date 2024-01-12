@@ -1,7 +1,7 @@
 /**
  * @file    Shabakah_Bluetooth_Serial.ino
  * @authors Khalid Mansoor AlAwadhi, Remal IoT
- * @date    12 Jan 2023
+ * @date    12 Jan 2024
  * 
  * @brief   This example shows how to use the Remal BLE (Bluetooth Low Energy) Serial library to send and receive data over Bluetooth LE, it 
  *          is meant to be used with the Shabakah board (ESP32-C3)

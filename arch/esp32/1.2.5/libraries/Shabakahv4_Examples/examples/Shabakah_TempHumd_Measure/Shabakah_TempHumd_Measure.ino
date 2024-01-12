@@ -1,7 +1,7 @@
 /**
  * @file    Shabakah_TempHumd_Measure.ino
  * @authors Khalid AlAwadhi, Remal IoT
- * @date    12 Jan 2023
+ * @date    12 Jan 2024
  * 
  * @brief   This example initializes the SHT30 sensor. If the initialization is successful, it sets 
  *          LED 1 to green; otherwise, it sets it to red. After successful initialization, the program 
