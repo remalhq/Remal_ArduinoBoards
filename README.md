@@ -12,6 +12,11 @@ https://remal.io/remal-core/package_remalboards_index.json
 5. Search for `Remal IoT` and install the latest versions of the boards you want to use
 6. Go to `Tools > Board` and select the board you want to use
 
+## Examples
+You can find examples for each board after selecting it from `Tools > Board` in Arduino IDE and then going to `File > Examples` look for the board name.
+
+There is currently a bug in Arduino IDE that prevents the examples from showing up in the `File > Examples` menu. The fix is to simply select any other board and then select the board you want to use again and the examples should show up.
+
 ## Currently Supported Boards
 - Shabakah v4.0
 
