@@ -11,13 +11,13 @@
 			{
 				"name": "Remal IoT Boards (AVR)",
 				"architecture": "avr",
-				"version": "1.3.0",
+				"version": "1.2.9",
 				"category": "Contributed",
 				"help": { "online": "https://remal.io/quick-start/" },
-				"url": "https://github.com/remaliot/Remal_ArduinoBoards/raw/main/ArchReleases/remaliotboards_avr_1.3.0.zip",
-				"archiveFileName": "remaliotboards_avr_1.3.0.zip",
-				"checksum": "SHA-256:0b91b2a9ae98e61a635f42aa247ae65e95466ce4e23233d9f4ef1ef6fb599cce",
-				"size": "4547429",
+				"url": "https://github.com/remaliot/Remal_ArduinoBoards/raw/main/ArchReleases/remaliotboards_avr_1.2.9.zip",
+				"archiveFileName": "remaliotboards_avr_1.2.9.zip",
+				"checksum": "SHA-256:276e629f053215220fd800e3abf861d47e2ec66cb34d2d0663b314858e523fd0",
+				"size": "4547432",
 				"boards": [
 					{ 
 						"name": "Nabd (Founders Edition)"
@@ -42,11 +42,11 @@
 			{
 				"name": "Remal IoT Boards (ESP32)",
 				"architecture": "esp32",
-				"version": "1.2.5",
+				"version": "1.2.4",
 				"category": "Contributed",
 				"help": { "online": "https://remal.io/quick-start/" },
-				"url": "https://github.com/remaliot/Remal_ArduinoBoards/raw/main/ArchReleases/remaliotboards_esp32_1.2.5.zip",
-				"archiveFileName": "remaliotboards_esp32_1.2.5.zip",
+				"url": "https://github.com/remaliot/Remal_ArduinoBoards/raw/main/ArchReleases/remaliotboards_esp32_1.2.4.zip",
+				"archiveFileName": "remaliotboards_esp32_1.2.4.zip",
 				"checksum": "SHA-256:b3fa3eb5223023150906c9668ade15b0d84a8feb19c641f4cd8b87c8da2f808c",
 				"size": "248839752",
 				"boards": [
