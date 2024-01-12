@@ -1,29 +1,29 @@
 /**
  * @file    Shabakah_TempHumd_Measure.ino
  * @authors Khalid AlAwadhi, Remal IoT
- * @date    13 Aug 2023
+ * @date    12 Jan 2023
  * 
- * @brief   This example initializes the SHT30 sensor. If the initialization is successful, it sets the LED 
- *          strip to green; otherwise, it sets it to red. After successful initialization, the program continuously 
- *          polls the SHT30 sensor every 500 ms to retrieve the current temperature and humidity readings. It then 
- *          prints these readings via the serial interface. To view the values, you can use the Serial Monitor (Found under "Tools")
- *          Alternatively, you can utilize the Serial Plotter for a more visual representation of the current values.
+ * @brief   This example initializes the SHT30 sensor. If the initialization is successful, it sets 
+ *          LED 1 to green; otherwise, it sets it to red. After successful initialization, the program 
+ *          continuously polls the SHT30 sensor every 500 ms to retrieve the current temperature and humidity 
+ *          readings. It then prints these readings via the serial. To view the values, you can use the 
+ *          Serial Monitor (Found under "Tools") Alternatively, you can utilize the Serial Plotter for a 
+ *          more visual representation of the current values.
  *          
- *          Make sure you select "Shabakah (Founders Edition)" under "Tools -> Boards -> Remal IoT Boards (ESP32)"
+ *          Make sure you select "Shabakah v4" under "Tools -> Boards -> Remal IoT Boards (ESP32)"
  *          and the correct port under "Tools -> Port" 
  */
 #include "Remal_SHT3X.h"
 #include "Adafruit_NeoPixel.h"
 
 
-
 /*#############################################
  * Shabakah Board Defines and Global Variables 
  *#############################################*/
 /* RGB LED (WS2812B) */
-const int LED_PIN = 6;                      //The pin connected to the RGB LED on Shabakah
-#define NUM_LEDS                    1       //Number of LEDs
-Adafruit_NeoPixel Shabakah_RGBLED(NUM_LEDS, LED_PIN, NEO_GRB + NEO_KHZ800);       //Object to control our RGB LED
+const int LED_1_PIN = 1;                    //The pin connected to LED 1 on Shabakah
+const int NumLEDs = 1;                      //Number of LEDs on each pin
+Adafruit_NeoPixel Shabakah_LED_1(NumLEDs, LED_1_PIN, NEO_GRB + NEO_KHZ800);       //Object to control LED 1
 
 /* Temp/Humd sensor */
 const int TempHumd_Addr = 0x44;             //The I2C address of the Temp/Humd sensor
@@ -38,10 +38,10 @@ void setup()
   /* Start serial communication with a baudrate of 9600 - so we can read output from the PC */
   Serial.begin(9600);
   
-  /* Initialize the RGB to be off, using the NeoPixel library */
-  Shabakah_RGBLED.begin();
-  Shabakah_RGBLED.clear();
-  Shabakah_RGBLED.show();
+  /* Initialize LED 1 to be off */
+  Shabakah_LED_1.begin();
+  Shabakah_LED_1.clear();
+  Shabakah_LED_1.show();
 
   /* Initialize the Temp/Humd sensor */
   SHT30_Sensor.Initialize();
@@ -54,16 +54,19 @@ void setup()
   if( !SHT30_Sensor.IsConnected() )
   {
     Serial.println("> Error: Could not initialize SHT30 temperature and humidity sensor!");
-    Shabakah_RGBLED.setPixelColor(0, 255, 0, 0);        //Set LED to red
-    Shabakah_RGBLED.show();
+
+    /* If sensor fails to connect, turn LED 1 RED */
+    Shabakah_LED_1.setPixelColor(0, 255, 0, 0);
+    Shabakah_LED_1.show();
     while(1)
     {
       //Wait forever
     }
   }
 
-  Shabakah_RGBLED.setPixelColor(0, 0, 255, 0);        //Set LED to green
-  Shabakah_RGBLED.show();
+  /* If sensor all good, turn LED 1 GREEN */
+  Shabakah_LED_1.setPixelColor(0, 0, 255, 0);
+  Shabakah_LED_1.show();
 }
 
 

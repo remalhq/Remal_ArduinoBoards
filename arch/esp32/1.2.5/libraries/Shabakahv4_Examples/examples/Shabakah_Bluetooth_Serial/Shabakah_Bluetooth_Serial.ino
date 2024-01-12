@@ -9,7 +9,8 @@
  *          This example will:
  *            - Display any data received from the connected Bluetooth device on the Serial Monitor
  *            - Every 1 second, a message will be sent to the connected device
- *            - RGB LED on Shabakah will be red when not connected to a device, and green when connected to a device
+ *            - LED 1 on Shabakah will be red when not connected to a device, and green when connected to a device
+ *            - LED 2 on Shabakah will be blue when receiving data from a connected device
  *          
  *          To send or receive data from the Shabakah board, you can one of the following apps:
  * 				    - BLE Terminal HM-10 (iOS): https://apps.apple.com/us/app/ble-terminal-hm-10/id1398703795
@@ -27,9 +28,11 @@
  * Shabakah Board Defines and Global Variables 
  *#############################################*/
 /* RGB LED (WS2812B) */
-const int LED_PIN = 1;                      //The pin connected to the RGB LED on Shabakah
-#define NUM_LEDS                    1       //Number of LEDs
-Adafruit_NeoPixel Shabakah_RGBLED(NUM_LEDS, LED_PIN, NEO_GRB + NEO_KHZ800);       //Object to control our RGB LED
+const int LED_1_PIN = 1;                    //The pin connected to RGB LED 1 on Shabakah
+const int LED_2_PIN = 3;                    //The pin connected to RGB LED 2 on Shabakah
+const int NumLEDs = 1;                      //Number of LEDs on each pin
+Adafruit_NeoPixel Shabakah_LED_1(NumLEDs, LED_1_PIN, NEO_GRB + NEO_KHZ800);       //Object to control LED 1
+Adafruit_NeoPixel Shabakah_LED_2(NumLEDs, LED_2_PIN, NEO_GRB + NEO_KHZ800);       //Object to control LED 2
 
 /* Bluetooth */
 BLESerial BT_Device;
@@ -45,9 +48,13 @@ void setup()
   Serial.begin(115200);
 
   /* Initialize the RGB to be off, using the NeoPixel library */
-  Shabakah_RGBLED.begin();
-  Shabakah_RGBLED.clear();
-  Shabakah_RGBLED.show();
+  Shabakah_LED_1.begin();
+  Shabakah_LED_1.clear();
+  Shabakah_LED_1.show();
+  
+  Shabakah_LED_2.begin();
+  Shabakah_LED_2.clear();
+  Shabakah_LED_2.show();
 
   /* Initialize the Bluetooth */
   BT_Device.Init("Shabakah");
@@ -59,36 +66,41 @@ void loop()
   /* Check if we are connected to a device */
   if( BT_Device.IsConnected() )
   {
-    /* If we are connected, turn on the RGB LED to GREEN */
-    Shabakah_RGBLED.setPixelColor(0, Shabakah_RGBLED.Color(0, 255, 0));
-    Shabakah_RGBLED.show();
+    /* If we are connected, turn on the LED 1 to GREEN */
+    Shabakah_LED_1.setPixelColor(0, Shabakah_LED_1.Color(0, 255, 0));
+    Shabakah_LED_1.show();
 
     /* Check if we have any data available to read */
     while( BT_Device.Data_Available() > 0 )
     {
+      /* While getting data turn LED 2 BLUE */
+      Shabakah_LED_2.setPixelColor(0, Shabakah_LED_2.Color(0, 0, 255));
+      Shabakah_LED_2.show();
+      
       /* Get the data */
       String Data = BT_Device.Get_Data();
       Serial.print("Data received: ");
       Serial.println(Data);
+
+      /* Clear LED 2 */
+      Shabakah_LED_2.clear();
+      Shabakah_LED_2.show();
     }
   }
   else
   {
-    /* If we are not connected, turn on the RGB LED to RED */
-    Shabakah_RGBLED.setPixelColor(0, Shabakah_RGBLED.Color(255, 0, 0));
-    Shabakah_RGBLED.show();
+    /* If we are not connected, turn on LED 1 to RED */
+    Shabakah_LED_1.setPixelColor(0, Shabakah_LED_1.Color(255, 0, 0));
+    Shabakah_LED_1.show();
   }
 
   if(Counter_HelloMsg >= 1000)
   {
     /* Send data to the connected device */
-    BT_Device.Send_Data("Hello, World! This is a message from Shabakah sent via Bluetooth!");
+    BT_Device.Send_Data("Hello, World! This is a message from Shabakah sent via Bluetooth!\r\n");
     Counter_HelloMsg = 0;
   }
 
   Counter_HelloMsg++;
   delay(1);
 }
-
-
-
