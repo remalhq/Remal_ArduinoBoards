@@ -1,0 +1,78 @@
+#################################################################
+#        Modified by Khalid AlAwadhi - Remal IoT, 2024          #
+#################################################################
+
+
+# See: https://arduino.github.io/arduino-cli/latest/platform-specification/
+
+menu.cpu=Processor
+
+##############################################################
+
+remalnabdfe.name=Nabd (Founders Edition)
+
+remalnabdfe.upload_port.5.board=Nabd (Founders Edition)
+
+remalnabdfe.upload.tool=avrdude
+remalnabdfe.upload.tool.default=avrdude
+remalnabdfe.upload.tool.network=arduino_ota
+remalnabdfe.upload.protocol=arduino
+remalnabdfe.upload.maximum_size=32256
+remalnabdfe.upload.maximum_data_size=2048
+remalnabdfe.upload.speed=115200
+
+remalnabdfe.bootloader.tool=avrdude
+remalnabdfe.bootloader.tool.default=avrdude
+remalnabdfe.bootloader.low_fuses=0xFF
+remalnabdfe.bootloader.high_fuses=0xDE
+remalnabdfe.bootloader.extended_fuses=0xFD
+remalnabdfe.bootloader.unlock_bits=0x3F
+remalnabdfe.bootloader.lock_bits=0x0F
+remalnabdfe.bootloader.file=optiboot/optiboot_atmega328.hex
+
+remalnabdfe.build.mcu=atmega328p
+remalnabdfe.build.f_cpu=16000000L
+remalnabdfe.build.board=NABD_FE
+remalnabdfe.build.core=arduino
+remalnabdfe.build.variant=nabd_fe
+
+##############################################################
+
+remalatlasfe.name=Atlas (Founders Edition)
+
+remalatlasfe.upload_port.4.board=Atlas (Founders Edition)
+
+remalatlasfe.upload.tool=avrdude
+remalatlasfe.upload.tool.default=avrdude
+remalatlasfe.upload.tool.network=arduino_ota
+remalatlasfe.upload.protocol=avr109
+remalatlasfe.upload.maximum_size=28672
+remalatlasfe.upload.maximum_data_size=2560
+remalatlasfe.upload.speed=57600
+remalatlasfe.upload.disable_flushing=true
+remalatlasfe.upload.use_1200bps_touch=true
+remalatlasfe.upload.wait_for_upload_port=true
+
+remalatlasfe.bootloader.tool=avrdude
+remalatlasfe.bootloader.tool.default=avrdude
+remalatlasfe.bootloader.low_fuses=0xff
+remalatlasfe.bootloader.high_fuses=0xd8
+remalatlasfe.bootloader.extended_fuses=0xcb
+remalatlasfe.bootloader.file=caterina/RemalIoT_Atlas_CaterinaBootloader.hex
+remalatlasfe.bootloader.unlock_bits=0x3F
+remalatlasfe.bootloader.lock_bits=0x2F
+
+remalatlasfe.build.mcu=atmega32u4
+remalatlasfe.build.f_cpu=16000000L
+
+remalatlasfe.build.usb_manufacturer="Remal IoT"
+remalatlasfe.build.usb_product="Atlas (Founders Edition)"
+remalatlasfe.build.vid=0x1971
+remalatlasfe.build.pid=0x9711
+
+remalatlasfe.build.board=ATLAS_FE
+remalatlasfe.build.core=arduino
+remalatlasfe.build.variant=atlas_fe
+remalatlasfe.build.extra_flags={build.usb_flags}
+
+##############################################################
