@@ -1,7 +1,7 @@
 /**
  * @file    Shabakah_DemoCode.ino
  * @authors Khalid Mansoor AlAwadhi, Remal IoT
- * @date    12 Jan 2023
+ * @date    12 Jan 2024
  * 
  * @brief   This demo utilizes all of the components on the Shabakah board.
  *          > Addressable RGB LEDs 1 and 2

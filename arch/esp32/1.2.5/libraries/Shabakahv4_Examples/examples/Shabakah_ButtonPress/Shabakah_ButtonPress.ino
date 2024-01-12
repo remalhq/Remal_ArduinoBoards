@@ -1,7 +1,7 @@
 /**
  * @file    Shabakah_ButtonPress.ino
  * @authors Khalid Mansoor AlAwadhi, Remal IoT
- * @date    12 Jan 2023
+ * @date    12 Jan 2024
  * 
  * @brief   This example serves as a demonstration of how to interface with the two buttons on 
  *          the Shabakah board and provides a foundation to build upon, enjoy!

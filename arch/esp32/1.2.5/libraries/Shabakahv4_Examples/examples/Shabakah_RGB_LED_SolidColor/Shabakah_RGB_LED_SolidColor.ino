@@ -1,7 +1,7 @@
 /**
  * @file    Shabakah_RGB_LED_SolidColor.ino
  * @authors Khalid Mansoor AlAwadhi, Remal IoT
- * @date    12 Jan 2023
+ * @date    12 Jan 2024
  * 
  * @brief   In this example, you can easily select the color to display on the LEDs by setting 
  *          individual red, green, and blue values. Additionally, you can adjust the brightness.
