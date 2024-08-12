@@ -14,7 +14,7 @@ This repository contains all Remal Arduino-supported boards.
 
 3. **Install Boards**
    - Go to `Tools > Board > Boards Manager`.
-   - Search for `Remal IoT` and install the latest versions of the boards you want to use.
+   - Search for `Remal` and install the latest versions of the boards you want to use.
 
 4. **Select Your Board**
    - Go to `Tools > Board` and select the Remal board you want to use.
