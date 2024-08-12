@@ -1,5 +1,5 @@
 #################################################################
-#	Modified by Khalid AlAwadhi - Remal IoT, 2024
+#	Modified by Khalid AlAwadhi - Remal, 2024
 # 	> Changes focused on removing anything not related to the
 #	  ESP32C3 as Shabakah is powered by the ESP32C3
 # 	> Changes also focused on renaming UI to show Shabakah (Founders Edition)
@@ -8,7 +8,7 @@
 #	> https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
 #################################################################
 
-name=Remal IoT Boards (ESP32)
+name=Remal Boards (ESP32)
 version=
 
 tools.riscv32-esp-elf-gcc.path={runtime.tools.riscv32-esp-elf-gcc.path}

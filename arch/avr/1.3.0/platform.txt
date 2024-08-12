@@ -1,12 +1,12 @@
 
 # Arduino AVR Core and platform.
 # ------------------------------
-# Modified by Khalid AlAwadhi, Remal IoT - 2024
+# Modified by Khalid AlAwadhi, Remal - 2024
 # ------------------------------
 # For more info:
 # https://arduino.github.io/arduino-cli/latest/platform-specification/
 
-name=Remal IoT Boards (AVR)
+name=Remal Boards (AVR)
 version=
 
 # AVR compile variables

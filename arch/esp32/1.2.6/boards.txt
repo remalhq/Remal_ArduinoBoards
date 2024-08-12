@@ -1,5 +1,5 @@
 #################################################################
-#	Modified by Khalid AlAwadhi - Remal IoT, 2024		
+#	Modified by Khalid AlAwadhi - Remal, 2024
 # 	> Changes focused on removing anything not related to the
 #	  ESP32C3 as Shabakah is powered by the ESP32C3
 # 	> Changes also focused on renaming UI to show Shabakah (Founders Edition)
@@ -87,7 +87,7 @@ remalshabakahv4.menu.JTAGAdapter.bridge=ESP USB Bridge
 remalshabakahv4.menu.JTAGAdapter.bridge.build.openocdscript=esp32c3-bridge.cfg
 remalshabakahv4.menu.JTAGAdapter.bridge.build.copy_jtag_files=1
 
-## Remal IoT - Updated to Enabled as default to allow using USB with Arduino Serial calls
+## Remal - Updated to Enabled as default to allow using USB with Arduino Serial calls
 remalshabakahv4.menu.CDCOnBoot.default=Enabled
 remalshabakahv4.menu.CDCOnBoot.default.build.cdc_on_boot=1
 remalshabakahv4.menu.CDCOnBoot.cdc=Disabled
@@ -137,7 +137,7 @@ remalshabakahv4.menu.CPUFreq.20.build.f_cpu=20000000L
 remalshabakahv4.menu.CPUFreq.10=10MHz
 remalshabakahv4.menu.CPUFreq.10.build.f_cpu=10000000L
 
-## Remal IoT - Disabled unused options
+## Remal - Disabled unused options
 #remalshabakahv4.menu.FlashMode.qio=QIO
 #remalshabakahv4.menu.FlashMode.qio.build.flash_mode=dio
 #remalshabakahv4.menu.FlashMode.qio.build.boot=qio
@@ -253,7 +253,7 @@ remalshabakahfe.menu.JTAGAdapter.bridge=ESP USB Bridge
 remalshabakahfe.menu.JTAGAdapter.bridge.build.openocdscript=esp32c3-bridge.cfg
 remalshabakahfe.menu.JTAGAdapter.bridge.build.copy_jtag_files=1
 
-## Remal IoT - Updated to Enabled as default to allow using USB with Arduino Serial calls
+## Remal - Updated to Enabled as default to allow using USB with Arduino Serial calls
 remalshabakahfe.menu.CDCOnBoot.default=Enabled
 remalshabakahfe.menu.CDCOnBoot.default.build.cdc_on_boot=1
 remalshabakahfe.menu.CDCOnBoot.cdc=Disabled
@@ -303,7 +303,7 @@ remalshabakahfe.menu.CPUFreq.20.build.f_cpu=20000000L
 remalshabakahfe.menu.CPUFreq.10=10MHz
 remalshabakahfe.menu.CPUFreq.10.build.f_cpu=10000000L
 
-## Remal IoT - Disabled unused options
+## Remal - Disabled unused options
 #remalshabakahfe.menu.FlashMode.qio=QIO
 #remalshabakahfe.menu.FlashMode.qio.build.flash_mode=dio
 #remalshabakahfe.menu.FlashMode.qio.build.boot=qio

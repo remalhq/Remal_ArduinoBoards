@@ -2,7 +2,7 @@
   pins_arduino.h - Pin definition functions for Arduino
   Part of Arduino - http://www.arduino.cc/
   
-  This file has been modified by Khalid AlAwadhi, Remal IoT - 2024
+  This file has been modified by Khalid AlAwadhi, Remal - 2024
   Atlas Founders Edition
 
   Origianlly written by David A. Mellis
