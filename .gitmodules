@@ -7,3 +7,6 @@
 [submodule "arch/esp32/1.3.0/libraries/Remal_SHT3X"]
 	path = arch/esp32/1.3.0/libraries/Remal_SHT3X
 	url = https://github.com/remalhq/Remal_SHT3X.git
+[submodule "arch/esp32/1.3.0/libraries/Remal_BLE_Serial"]
+	path = arch/esp32/1.3.0/libraries/Remal_BLE_Serial
+	url = https://github.com/remalhq/Remal_BLE_Serial.git
