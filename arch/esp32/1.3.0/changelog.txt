@@ -9,12 +9,10 @@
 ###########################################################################
 
 # v1.3.0 (17 Jan 2025)
-	- Updated core to match latest version of ESP32 tools and libraries (Arduino Release v3.1.1 based on ESP-IDF v5.3.2)
-	- Updated Adafruit NeoPixel library to version 1.12.4
-	- Added new defines for Shabakah for use if needed: SHBK_BOARD for all Shabakah boards and SHBK_FE and SHBK_V4 for specific Shabakah variations
-	- Updated partitions and made Shabakahs use Minimal SPIFFS as default partition scheme
-	- XXX
-
+	- Updated core to match latest version of ESP32 tools and libraries, a lot of tools and examples were updated and new examples added (Arduino Release v3.1.1 based on ESP-IDF v5.3.2)
+	- Updated `Adafruit NeoPixel` library to version 1.12.4
+	- Updated `shabakah_fe` and `shabakah_v4` `pins_arduino.h` file under `variants` folder. Added new defines for Shabakah for use if needed: `SHBK_BOARD` for all Shabakah boards and `SHBK_FE` and `SHBK_V4` for specific Shabakah variations
+	
 # v1.2.6 (11 Aug 2024)
 	- Add new Remal library "Remal_CommonUtils" (a git submodule)
 	- Updated "Remal_SHT3X" library to be git submodule
