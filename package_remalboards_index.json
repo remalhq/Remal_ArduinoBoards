@@ -79,8 +79,8 @@
                             "version": "0.11.0-arduino5"
                         }
                     ],
-                    "size": "20718864",
-                    "checksum": "SHA-256:0a12944e24b2497a6c86d2add8ef3469bab907329316982c57a8fd22558a2a87"
+                    "size": "20718851",
+                    "checksum": "SHA-256:45ac1421890e5d8c54c2fc9bc49a7f5d2e6c2aa71a5d643242560872ca471729"
                 },
                 {
                     "name": "Remal Boards (ESP32)",
