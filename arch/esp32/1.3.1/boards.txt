@@ -109,7 +109,7 @@ remalshabakahv4.menu.PartitionScheme.default.build.partitions=min_spiffs
 remalshabakahv4.menu.PartitionScheme.default.upload.maximum_size=1966080
 
 #-- Below is ESP default for ESP32C3 by Espressif changed the default --
-remalshabakahv4.menu.PartitionScheme.esp_default= Default 4MB with spiffs (1.2MB APP/1.5MB SPIFFS)
+remalshabakahv4.menu.PartitionScheme.esp_default=Default 4MB with spiffs (1.2MB APP/1.5MB SPIFFS)
 remalshabakahv4.menu.PartitionScheme.esp_default.build.partitions=default
 
 remalshabakahv4.menu.PartitionScheme.defaultffat=Default 4MB with ffat (1.2MB APP/1.5MB FATFS)
@@ -296,7 +296,7 @@ remalshabakahfe.menu.PartitionScheme.default.build.partitions=min_spiffs
 remalshabakahfe.menu.PartitionScheme.default.upload.maximum_size=1966080
 
 #-- Below is ESP default for ESP32C3 by Espressif changed the default --
-remalshabakahfe.menu.PartitionScheme.esp_default= 4MB with spiffs (1.2MB APP/1.5MB SPIFFS)
+remalshabakahfe.menu.PartitionScheme.esp_default=Default 4MB with spiffs (1.2MB APP/1.5MB SPIFFS)
 remalshabakahfe.menu.PartitionScheme.esp_default.build.partitions=default
 
 remalshabakahfe.menu.PartitionScheme.defaultffat=Default 4MB with ffat (1.2MB APP/1.5MB FATFS)
