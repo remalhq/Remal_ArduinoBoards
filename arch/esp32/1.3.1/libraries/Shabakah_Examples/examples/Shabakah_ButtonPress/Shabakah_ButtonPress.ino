@@ -1,6 +1,6 @@
 /**
  * @file    Shabakah_ButtonPress.ino
- * @authors Khalid Mansoor AlAwadhi, Remal IoT
+ * @authors Khalid Mansoor AlAwadhi, Remal <khalid@remal.io>
  * @date    12 Jan 2024
  * 
  * @brief   This example serves as a demonstration of how to interface with the two buttons on 
@@ -8,7 +8,7 @@
  * 
  *          NOTE: You must open the "Serial Monitor" to run this demo. Click on "Tools -> Serial Monitor"
  *          
- *          Make sure you select "Shabakah v4" under "Tools -> Boards -> Remal IoT Boards (ESP32)"
+ *          Make sure you select "Shabakah v4" under "Tools -> Boards -> Remal Boards (ESP32)"
  *          and the correct port under "Tools -> Port" 
  */
  

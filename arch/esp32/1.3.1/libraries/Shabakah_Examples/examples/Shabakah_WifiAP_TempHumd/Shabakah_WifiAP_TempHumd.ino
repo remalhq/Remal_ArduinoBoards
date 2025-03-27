@@ -14,7 +14,7 @@
  *          As an additional feature, the LEDs on Shabakah blink sequentially (LED2 then LED1) each time a client 
  *          connects and a new reading is obtained, signifying that the webpage has been updated.
  *          
- *          Make sure you select "Shabakah v4" under "Tools -> Boards -> Remal IoT Boards (ESP32)"
+ *          Make sure you select "Shabakah v4" under "Tools -> Boards -> Remal Boards (ESP32)"
  *          and the correct port under "Tools -> Port" 
  */
 #include "Remal_SHT3X.h"

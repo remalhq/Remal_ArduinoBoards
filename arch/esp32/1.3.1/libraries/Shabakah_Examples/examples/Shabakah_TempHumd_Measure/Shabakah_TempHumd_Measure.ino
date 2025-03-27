@@ -10,7 +10,7 @@
  *          Serial Monitor (Found under "Tools") Alternatively, you can utilize the Serial Plotter for a 
  *          more visual representation of the current values.
  *          
- *          Make sure you select "Shabakah v4" under "Tools -> Boards -> Remal IoT Boards (ESP32)"
+ *          Make sure you select "Shabakah v4" under "Tools -> Boards -> Remal Boards (ESP32)"
  *          and the correct port under "Tools -> Port" 
  */
 #include "Remal_SHT3X.h"

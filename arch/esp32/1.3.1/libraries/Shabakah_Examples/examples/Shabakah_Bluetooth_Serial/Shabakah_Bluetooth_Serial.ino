@@ -17,7 +17,7 @@
  *            - (iOS - Free) Bluefruit Connect: https://apps.apple.com/us/app/bluefruit-connect/id830125974
  *            - (Android - Free) Serial Bluetooth Terminal: https://play.google.com/store/apps/details?id=de.kai_morich.serial_bluetooth_terminal&hl=en&gl=US
  *
- *          Make sure you select "Shabakah v4" under "Tools -> Boards -> Remal IoT Boards (ESP32)"
+ *          Make sure you select "Shabakah v4" under "Tools -> Boards -> Remal Boards (ESP32)"
  *          and the correct port under "Tools -> Port" 
  */
 #include "Remal_BLE_Serial.h"

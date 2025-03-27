@@ -6,7 +6,7 @@
  * @brief   In this example, you can easily select the color to display on the LEDs by setting 
  *          individual red, green, and blue values. Additionally, you can adjust the brightness.
  *
- *          Make sure you select "Shabakah v4" under "Tools -> Boards -> Remal IoT Boards (ESP32)"
+ *          Make sure you select "Shabakah v4" under "Tools -> Boards -> Remal Boards (ESP32)"
  *          and the correct port under "Tools -> Port" 
  */
 #include "Adafruit_NeoPixel.h"

@@ -17,8 +17,8 @@
  *          Additionally, you can monitor and send the expected messages in real-time using the MQTT Dashboard at https://mqtt.remal.io.
  *          Connect to the broker and subscribe to the topic "remal/simplemqtt/example" to view and send messages.
  * 
- *          Ensure "Shabakah v4" is selected under "Tools -> Boards -> Remal IoT Boards (ESP32)" 
- *          and the correct port is selected under "Tools -> Port". 
+ *          Make sure you select "Shabakah v4" under "Tools -> Boards -> Remal Boards (ESP32)"
+ *          and the correct port under "Tools -> Port" 
  */
 #include <WiFi.h>               // Wi-Fi Library
 #include "Adafruit_NeoPixel.h"  // NeoPixel Library for controlling RGB LEDs

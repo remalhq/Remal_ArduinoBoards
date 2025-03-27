@@ -104,8 +104,13 @@ remalshabakahv4.menu.CDCOnBoot.cdc=Disabled
 remalshabakahv4.menu.CDCOnBoot.cdc.build.cdc_on_boot=0
 
 # Partitions
-remalshabakahv4.menu.PartitionScheme.default= 4MB with spiffs (1.2MB APP/1.5MB SPIFFS)
-remalshabakahv4.menu.PartitionScheme.default.build.partitions=default
+remalshabakahv4.menu.PartitionScheme.default=Minimal SPIFFS (1.9MB APP with OTA/190KB SPIFFS)
+remalshabakahv4.menu.PartitionScheme.default.build.partitions=min_spiffs
+remalshabakahv4.menu.PartitionScheme.default.upload.maximum_size=1966080
+
+#-- Below is ESP default for ESP32C3 by Espressif changed the default --
+remalshabakahv4.menu.PartitionScheme.esp_default= Default 4MB with spiffs (1.2MB APP/1.5MB SPIFFS)
+remalshabakahv4.menu.PartitionScheme.esp_default.build.partitions=default
 
 remalshabakahv4.menu.PartitionScheme.defaultffat=Default 4MB with ffat (1.2MB APP/1.5MB FATFS)
 remalshabakahv4.menu.PartitionScheme.defaultffat.build.partitions=default_ffat

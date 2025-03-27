@@ -22,6 +22,8 @@
 				> `Remal_BLE_Serial v1.0.1`
 	- Shabakah Founders Edition (v3.X) is now deprecated and will no longer be updated. All new updates will be for Shabakah v4 only. Note that v4 and v3.X share the same MCU and so the examples are compatible with both boards with minor changes in the pinout
 	- Updated `Shabakah_RGB_LED_SolidColor.ino` example with small bug fix due to both LEDs not turning on if there isn't a small delay between the two calls to `show()` function
+	- Updated Shabakah v4 and Shabakah FE to both use `Minimal SPIFFS (1.9MB APP with OTA/190KB SPIFFS)` as their default partition scheme
+	- Updated some example comments from "Remal IoT" to "Remal"
 
 # v1.3.0 (17 Jan 2025)
 	- Updated core to match latest version of ESP32 tools and libraries, a lot of tools and examples were updated and new examples added (Arduino Release v3.1.1 based on ESP-IDF v5.3.2)
