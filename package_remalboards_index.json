@@ -16,8 +16,8 @@
                     "category": "Contributed",
                     "url": "https://github.com/remalhq/Remal_ArduinoBoards/raw/main/ArchReleases/remalboards_esp32_1.3.1.zip",
                     "archiveFileName": "remalboards_esp32_1.3.1.zip",
-                    "checksum": "SHA-256:4c23e1538522ff3449acb8f2b4590b7affd0328589b12815797852d494bcf9e2",
-                    "size": "20763454",
+                    "checksum": "SHA-256:0b14669fe53bee43e9dafc1dabc717889487a732ad0307436eaeadb4ff52dba7",
+                    "size": "20763411",
                     "help": {
                         "online": "https://remal.io/quick-start/"
                     },

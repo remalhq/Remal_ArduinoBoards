@@ -103,12 +103,11 @@ remalshabakahv4.menu.CDCOnBoot.default.build.cdc_on_boot=1
 remalshabakahv4.menu.CDCOnBoot.cdc=Disabled
 remalshabakahv4.menu.CDCOnBoot.cdc.build.cdc_on_boot=0
 
-# Partitions
+# Partitions (Default from Espressif was 4MB with spiffs, changed to Minimal SPIFFS)
 remalshabakahv4.menu.PartitionScheme.default=Minimal SPIFFS (1.9MB APP with OTA/190KB SPIFFS)
 remalshabakahv4.menu.PartitionScheme.default.build.partitions=min_spiffs
 remalshabakahv4.menu.PartitionScheme.default.upload.maximum_size=1966080
 
-#-- Below is ESP default for ESP32C3 by Espressif changed the default --
 remalshabakahv4.menu.PartitionScheme.esp_default=Default 4MB with spiffs (1.2MB APP/1.5MB SPIFFS)
 remalshabakahv4.menu.PartitionScheme.esp_default.build.partitions=default
 
@@ -141,10 +140,6 @@ remalshabakahv4.menu.PartitionScheme.noota_3gffat.upload.maximum_size=1048576
 remalshabakahv4.menu.PartitionScheme.huge_app=Huge APP (3MB No OTA/1MB SPIFFS)
 remalshabakahv4.menu.PartitionScheme.huge_app.build.partitions=huge_app
 remalshabakahv4.menu.PartitionScheme.huge_app.upload.maximum_size=3145728
-
-remalshabakahv4.menu.PartitionScheme.min_spiffs=Minimal SPIFFS (1.9MB APP with OTA/190KB SPIFFS)
-remalshabakahv4.menu.PartitionScheme.min_spiffs.build.partitions=min_spiffs
-remalshabakahv4.menu.PartitionScheme.min_spiffs.upload.maximum_size=1966080
 
 remalshabakahv4.menu.PartitionScheme.zigbee_zczr=Zigbee ZCZR 4MB with spiffs
 remalshabakahv4.menu.PartitionScheme.zigbee_zczr.build.partitions=zigbee_zczr
@@ -290,12 +285,11 @@ remalshabakahfe.menu.CDCOnBoot.default.build.cdc_on_boot=1
 remalshabakahfe.menu.CDCOnBoot.cdc=Disabled
 remalshabakahfe.menu.CDCOnBoot.cdc.build.cdc_on_boot=0
 
-# Partitions
+# Partitions (Default from Espressif was 4MB with spiffs, changed to Minimal SPIFFS)
 remalshabakahfe.menu.PartitionScheme.default=Minimal SPIFFS (1.9MB APP with OTA/190KB SPIFFS)
 remalshabakahfe.menu.PartitionScheme.default.build.partitions=min_spiffs
 remalshabakahfe.menu.PartitionScheme.default.upload.maximum_size=1966080
 
-#-- Below is ESP default for ESP32C3 by Espressif changed the default --
 remalshabakahfe.menu.PartitionScheme.esp_default=Default 4MB with spiffs (1.2MB APP/1.5MB SPIFFS)
 remalshabakahfe.menu.PartitionScheme.esp_default.build.partitions=default
 
@@ -328,10 +322,6 @@ remalshabakahfe.menu.PartitionScheme.noota_3gffat.upload.maximum_size=1048576
 remalshabakahfe.menu.PartitionScheme.huge_app=Huge APP (3MB No OTA/1MB SPIFFS)
 remalshabakahfe.menu.PartitionScheme.huge_app.build.partitions=huge_app
 remalshabakahfe.menu.PartitionScheme.huge_app.upload.maximum_size=3145728
-
-remalshabakahfe.menu.PartitionScheme.min_spiffs=Minimal SPIFFS (1.9MB APP with OTA/190KB SPIFFS)
-remalshabakahfe.menu.PartitionScheme.min_spiffs.build.partitions=min_spiffs
-remalshabakahfe.menu.PartitionScheme.min_spiffs.upload.maximum_size=1966080
 
 remalshabakahfe.menu.PartitionScheme.zigbee_zczr=Zigbee ZCZR 4MB with spiffs
 remalshabakahfe.menu.PartitionScheme.zigbee_zczr.build.partitions=zigbee_zczr
