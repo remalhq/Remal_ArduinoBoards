@@ -1,0 +1,61 @@
+###########################################################################
+#	Remal AVR Boards
+#
+#	Currently supported boards are:
+#		- Nabd Founders Edition (v3.1): ATMEGA328p
+#		- Atlas Founders Edition (v2): ATMEGA32u4
+###########################################################################
+
+# v1.3.1 (21 Mar 2025)
+	- Scrapped the use of git submodules for Remal libraries and added them directly to the repository as every arch update required re-initing all submodules from scratch
+
+# v1.3.0 (12 Aug 2024)
+	- Updated "Remal_SHT3X" library to be git submodule
+	- Updated text across different files to use "Remal" instead of "Remal IoT"
+
+# V1.2.9 (11 Jan 2024)
+	- Latest updates now hosted on GitHub: https://github.com/remaliot/Remal_ArduinoBoards
+	- Updated naming of Nabd v3.1 board to "Nabd Founders Edition" and Atlas v2 board to "Atlas Founders Edition"
+	- Updated "Remal_SHT3X" library to v2.0.1
+
+# V1.2.8 (13 Aug 2023)
+	- Added new Remal IoT library for the SHT3X Temperature and Humidity Sensor "Remal_SHT3X" with example code
+	- Updated all examples to utilize our new "Remal_SHT3X" library 
+	
+# V1.2.7 (29 Jul 2023)
+	- Changed folder name from "remal_iot" to "remal" to avoid an issue on Windows when building projects and the file path is too long
+	
+# V1.2.6 (13 Jun 2023)
+	- Slight update to all examples to simplify code
+	- Added 'Keyboard' library
+	- Added new examples for the Atlas board:
+		> Button Press
+		> Keyboard Text Paster
+
+# v1.2.5 (11 Jun 2023)
+	- Slight update to example "Demo code"
+	- Added 'SdFat' library
+	- Updated 'FastLED' library to 3.6.0 and re-added examples
+	- Added new examples for the Atlas board:
+		> SD Card List Files
+		> Temperature and Humidity Measurements
+		> Accelerometer Readings
+		> RGB LED Strip Demo
+		> RGB LED Solid Colors
+
+# v1.2.0 (16 Apr 2023)
+	- Added custom examples with all needed libraries for the Atlas board:
+		> Demo code
+		> Accelerometer Mouse
+	- Added custom example for the Nabd board:
+		> Demo code
+
+# v1.1.0 (12 Mar 2023)
+	- Created and added custom Caterina bootloader for the Atlas board
+
+# v1.0.0 (11 Dec 2022)
+	- Initial release
+
+
+
+
