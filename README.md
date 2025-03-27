@@ -7,7 +7,7 @@ This repository contains all Remal Arduino-supported boards.
    
 2. **Add Board Manager URL**
    - Go to `File > Preferences`.
-   - Add the following URL to `Additional Boards Manager URLs`:
+   - Add the following URL to `Additional Boards Manager URLs`, it will fetch the latest tagged release:
      ```
      https://remal.io/remal-core/package_remalboards_index.json
      ```
