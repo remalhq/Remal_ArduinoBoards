@@ -1,0 +1,11 @@
+######################################
+# Remal Master .gitignore file v1.0
+# This file is used to ignore files and directories
+# that should not be tracked by Git.
+######################################
+
+# VSCode settings
+.vscode/
+
+# MacOS Finder junk
+.DS_Store

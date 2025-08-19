@@ -12,6 +12,79 @@
                 {
                     "name": "Remal Boards (ESP32)",
                     "architecture": "esp32",
+                    "version": "1.3.2",
+                    "category": "Contributed",
+                    "url": "https://github.com/remalhq/Remal_ArduinoBoards/raw/main/ArchReleases/remalboards_esp32_1.3.2.zip",
+                    "archiveFileName": "remalboards_esp32_1.3.2.zip",
+                    "checksum": "SHA-256:fffe737313abb4baa6120c0c3c0af4b7aeeb28089ad9e3c06a460ab90cb5a59f",
+                    "size": "20821172",
+                    "help": {
+                        "online": "https://remal.io/quick-start/"
+                    },
+                    "boards": [
+                        {
+                            "name": "Shabakah v4"
+                        },
+                        {
+                            "name": "Shabakah (Founders Edition)"
+                        }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "remal",
+                            "name": "esp32-arduino-libs",
+                            "version": "idf-release_v5.3-489d7a2b-v1"
+                        },
+                        {
+                            "packager": "remal",
+                            "name": "esp-x32",
+                            "version": "2405"
+                        },
+                        {
+                            "packager": "remal",
+                            "name": "xtensa-esp-elf-gdb",
+                            "version": "14.2_20240403"
+                        },
+                        {
+                            "packager": "remal",
+                            "name": "esp-rv32",
+                            "version": "2405"
+                        },
+                        {
+                            "packager": "remal",
+                            "name": "riscv32-esp-elf-gdb",
+                            "version": "14.2_20240403"
+                        },
+                        {
+                            "packager": "remal",
+                            "name": "openocd-esp32",
+                            "version": "v0.12.0-esp32-20241016"
+                        },
+                        {
+                            "packager": "remal",
+                            "name": "esptool_py",
+                            "version": "4.9.dev3"
+                        },
+                        {
+                            "packager": "remal",
+                            "name": "mkspiffs",
+                            "version": "0.2.3"
+                        },
+                        {
+                            "packager": "remal",
+                            "name": "mklittlefs",
+                            "version": "3.0.0-gnu12-dc7f933"
+                        },
+                        {
+                            "packager": "arduino",
+                            "name": "dfu-util",
+                            "version": "0.11.0-arduino5"
+                        }
+                    ]
+                },
+                {
+                    "name": "Remal Boards (ESP32)",
+                    "architecture": "esp32",
                     "version": "1.3.1",
                     "category": "Contributed",
                     "url": "https://github.com/remalhq/Remal_ArduinoBoards/raw/main/ArchReleases/remalboards_esp32_1.3.1.zip",
