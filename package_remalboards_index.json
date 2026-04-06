@@ -14,7 +14,7 @@
                     "architecture": "esp32",
                     "version": "1.3.2",
                     "category": "Contributed",
-                    "url": "https://github.com/remalhq/Remal_ArduinoBoards/raw/main/ArchReleases/remalboards_esp32_1.3.2.zip",
+                    "url": "https://remal.io/remal-core/arch/remalboards_esp32_1.3.2.zip",
                     "archiveFileName": "remalboards_esp32_1.3.2.zip",
                     "checksum": "SHA-256:fffe737313abb4baa6120c0c3c0af4b7aeeb28089ad9e3c06a460ab90cb5a59f",
                     "size": "20821172",
@@ -87,7 +87,7 @@
                     "architecture": "esp32",
                     "version": "1.3.1",
                     "category": "Contributed",
-                    "url": "https://github.com/remalhq/Remal_ArduinoBoards/raw/main/ArchReleases/remalboards_esp32_1.3.1.zip",
+                    "url": "https://remal.io/remal-core/arch/remalboards_esp32_1.3.1.zip",
                     "archiveFileName": "remalboards_esp32_1.3.1.zip",
                     "checksum": "SHA-256:0b14669fe53bee43e9dafc1dabc717889487a732ad0307436eaeadb4ff52dba7",
                     "size": "20763411",
@@ -159,7 +159,7 @@
                     "name": "Remal Boards (ESP32)",
                     "architecture": "esp32",
                     "version": "1.3.0",
-                    "url": "https://github.com/remalhq/Remal_ArduinoBoards/raw/main/ArchReleases/remalboards_esp32_1.3.0.zip",
+                    "url": "https://remal.io/remal-core/arch/remalboards_esp32_1.3.0.zip",
                     "archiveFileName": "remalboards_esp32_1.3.0.zip",
                     "category": "Contributed",
                     "help": {
@@ -232,7 +232,7 @@
                     "name": "Remal Boards (ESP32)",
                     "architecture": "esp32",
                     "version": "1.2.6",
-                    "url": "https://github.com/remalhq/Remal_ArduinoBoards/raw/main/ArchReleases/remalboards_esp32_1.2.6.zip",
+                    "url": "https://remal.io/remal-core/arch/remalboards_esp32_1.2.6.zip",
                     "archiveFileName": "remalboards_esp32_1.2.6.zip",
                     "category": "Contributed",
                     "help": {
@@ -294,7 +294,7 @@
                     "help": {
                         "online": "https://remal.io/quick-start/"
                     },
-                    "url": "https://github.com/remalhq/Remal_ArduinoBoards/raw/main/ArchReleases/remaliotboards_esp32_1.2.5.zip",
+                    "url": "https://remal.io/remal-core/arch/remaliotboards_esp32_1.2.5.zip",
                     "archiveFileName": "remaliotboards_esp32_1.2.5.zip",
                     "checksum": "SHA-256:e6a47ee522c4f37c878be550d1797474ffe8485415b64b4a4a4d3db5480658b2",
                     "size": "248909942",
@@ -352,7 +352,7 @@
                     "help": {
                         "online": "https://remal.io/quick-start/"
                     },
-                    "url": "https://github.com/remalhq/Remal_ArduinoBoards/raw/main/ArchReleases/remaliotboards_esp32_1.2.4.zip",
+                    "url": "https://remal.io/remal-core/arch/remaliotboards_esp32_1.2.4.zip",
                     "archiveFileName": "remaliotboards_esp32_1.2.4.zip",
                     "checksum": "SHA-256:97ac5f9052f7cb2bb597e9c38d4d2f4eff925b729d4c93c9bbc6105d4c0eb9df",
                     "size": "248894224",
@@ -404,7 +404,7 @@
                     "architecture": "avr",
                     "version": "1.3.1",
                     "category": "Contributed",
-                    "url": "https://github.com/remalhq/Remal_ArduinoBoards/raw/main/ArchReleases/remalboards_avr_1.3.1.zip",
+                    "url": "https://remal.io/remal-core/arch/remalboards_avr_1.3.1.zip",
                     "archiveFileName": "remalboards_avr_1.3.1.zip",
                     "checksum": "SHA-256:5c8fa1c4680635bedafc67693c4ec0db9bf57ffefaefd78152f0e47faab0c2de",
                     "size": "4555969",
@@ -436,7 +436,7 @@
                     "name": "Remal Boards (AVR)",
                     "architecture": "avr",
                     "version": "1.3.0",
-                    "url": "https://github.com/remalhq/Remal_ArduinoBoards/raw/main/ArchReleases/remalboards_avr_1.3.0.zip",
+                    "url": "https://remal.io/remal-core/arch/remalboards_avr_1.3.0.zip",
                     "archiveFileName": "remalboards_avr_1.3.0.zip",
                     "category": "Contributed",
                     "help": {
@@ -473,7 +473,7 @@
                     "help": {
                         "online": "https://remal.io/quick-start/"
                     },
-                    "url": "https://github.com/remalhq/Remal_ArduinoBoards/raw/main/ArchReleases/remaliotboards_avr_1.2.9.zip",
+                    "url": "https://remal.io/remal-core/arch/remaliotboards_avr_1.2.9.zip",
                     "archiveFileName": "remaliotboards_avr_1.2.9.zip",
                     "checksum": "SHA-256:ecb84a5f6a5dfb6e1491cabad10a672583bce3885e96f1905c5753a92a895e87",
                     "size": "4602011",
@@ -504,65 +504,65 @@
                     "name": "esp32-arduino-libs",
                     "version": "idf-release_v5.3-489d7a2b-v1",
                     "systems": [
-                      {
-                        "host": "i686-mingw32",
-                        "url": "https://github.com/espressif/esp32-arduino-lib-builder/releases/download/idf-release_v5.3/esp32-arduino-libs-idf-release_v5.3-489d7a2b-v1.zip",
-                        "archiveFileName": "esp32-arduino-libs-idf-release_v5.3-489d7a2b-v1.zip",
-                        "checksum": "SHA-256:489012502218a7d30f6c312764bc8d10830a51e1db29558f15181c68373d0095",
-                        "size": "341414090"
-                      },
-                      {
-                        "host": "x86_64-mingw32",
-                        "url": "https://github.com/espressif/esp32-arduino-lib-builder/releases/download/idf-release_v5.3/esp32-arduino-libs-idf-release_v5.3-489d7a2b-v1.zip",
-                        "archiveFileName": "esp32-arduino-libs-idf-release_v5.3-489d7a2b-v1.zip",
-                        "checksum": "SHA-256:489012502218a7d30f6c312764bc8d10830a51e1db29558f15181c68373d0095",
-                        "size": "341414090"
-                      },
-                      {
-                        "host": "arm64-apple-darwin",
-                        "url": "https://github.com/espressif/esp32-arduino-lib-builder/releases/download/idf-release_v5.3/esp32-arduino-libs-idf-release_v5.3-489d7a2b-v1.zip",
-                        "archiveFileName": "esp32-arduino-libs-idf-release_v5.3-489d7a2b-v1.zip",
-                        "checksum": "SHA-256:489012502218a7d30f6c312764bc8d10830a51e1db29558f15181c68373d0095",
-                        "size": "341414090"
-                      },
-                      {
-                        "host": "x86_64-apple-darwin",
-                        "url": "https://github.com/espressif/esp32-arduino-lib-builder/releases/download/idf-release_v5.3/esp32-arduino-libs-idf-release_v5.3-489d7a2b-v1.zip",
-                        "archiveFileName": "esp32-arduino-libs-idf-release_v5.3-489d7a2b-v1.zip",
-                        "checksum": "SHA-256:489012502218a7d30f6c312764bc8d10830a51e1db29558f15181c68373d0095",
-                        "size": "341414090"
-                      },
-                      {
-                        "host": "x86_64-pc-linux-gnu",
-                        "url": "https://github.com/espressif/esp32-arduino-lib-builder/releases/download/idf-release_v5.3/esp32-arduino-libs-idf-release_v5.3-489d7a2b-v1.zip",
-                        "archiveFileName": "esp32-arduino-libs-idf-release_v5.3-489d7a2b-v1.zip",
-                        "checksum": "SHA-256:489012502218a7d30f6c312764bc8d10830a51e1db29558f15181c68373d0095",
-                        "size": "341414090"
-                      },
-                      {
-                        "host": "i686-pc-linux-gnu",
-                        "url": "https://github.com/espressif/esp32-arduino-lib-builder/releases/download/idf-release_v5.3/esp32-arduino-libs-idf-release_v5.3-489d7a2b-v1.zip",
-                        "archiveFileName": "esp32-arduino-libs-idf-release_v5.3-489d7a2b-v1.zip",
-                        "checksum": "SHA-256:489012502218a7d30f6c312764bc8d10830a51e1db29558f15181c68373d0095",
-                        "size": "341414090"
-                      },
-                      {
-                        "host": "aarch64-linux-gnu",
-                        "url": "https://github.com/espressif/esp32-arduino-lib-builder/releases/download/idf-release_v5.3/esp32-arduino-libs-idf-release_v5.3-489d7a2b-v1.zip",
-                        "archiveFileName": "esp32-arduino-libs-idf-release_v5.3-489d7a2b-v1.zip",
-                        "checksum": "SHA-256:489012502218a7d30f6c312764bc8d10830a51e1db29558f15181c68373d0095",
-                        "size": "341414090"
-                      },
-                      {
-                        "host": "arm-linux-gnueabihf",
-                        "url": "https://github.com/espressif/esp32-arduino-lib-builder/releases/download/idf-release_v5.3/esp32-arduino-libs-idf-release_v5.3-489d7a2b-v1.zip",
-                        "archiveFileName": "esp32-arduino-libs-idf-release_v5.3-489d7a2b-v1.zip",
-                        "checksum": "SHA-256:489012502218a7d30f6c312764bc8d10830a51e1db29558f15181c68373d0095",
-                        "size": "341414090"
-                      }
+                        {
+                            "host": "i686-mingw32",
+                            "url": "https://github.com/espressif/esp32-arduino-lib-builder/releases/download/idf-release_v5.3/esp32-arduino-libs-idf-release_v5.3-489d7a2b-v1.zip",
+                            "archiveFileName": "esp32-arduino-libs-idf-release_v5.3-489d7a2b-v1.zip",
+                            "checksum": "SHA-256:489012502218a7d30f6c312764bc8d10830a51e1db29558f15181c68373d0095",
+                            "size": "341414090"
+                        },
+                        {
+                            "host": "x86_64-mingw32",
+                            "url": "https://github.com/espressif/esp32-arduino-lib-builder/releases/download/idf-release_v5.3/esp32-arduino-libs-idf-release_v5.3-489d7a2b-v1.zip",
+                            "archiveFileName": "esp32-arduino-libs-idf-release_v5.3-489d7a2b-v1.zip",
+                            "checksum": "SHA-256:489012502218a7d30f6c312764bc8d10830a51e1db29558f15181c68373d0095",
+                            "size": "341414090"
+                        },
+                        {
+                            "host": "arm64-apple-darwin",
+                            "url": "https://github.com/espressif/esp32-arduino-lib-builder/releases/download/idf-release_v5.3/esp32-arduino-libs-idf-release_v5.3-489d7a2b-v1.zip",
+                            "archiveFileName": "esp32-arduino-libs-idf-release_v5.3-489d7a2b-v1.zip",
+                            "checksum": "SHA-256:489012502218a7d30f6c312764bc8d10830a51e1db29558f15181c68373d0095",
+                            "size": "341414090"
+                        },
+                        {
+                            "host": "x86_64-apple-darwin",
+                            "url": "https://github.com/espressif/esp32-arduino-lib-builder/releases/download/idf-release_v5.3/esp32-arduino-libs-idf-release_v5.3-489d7a2b-v1.zip",
+                            "archiveFileName": "esp32-arduino-libs-idf-release_v5.3-489d7a2b-v1.zip",
+                            "checksum": "SHA-256:489012502218a7d30f6c312764bc8d10830a51e1db29558f15181c68373d0095",
+                            "size": "341414090"
+                        },
+                        {
+                            "host": "x86_64-pc-linux-gnu",
+                            "url": "https://github.com/espressif/esp32-arduino-lib-builder/releases/download/idf-release_v5.3/esp32-arduino-libs-idf-release_v5.3-489d7a2b-v1.zip",
+                            "archiveFileName": "esp32-arduino-libs-idf-release_v5.3-489d7a2b-v1.zip",
+                            "checksum": "SHA-256:489012502218a7d30f6c312764bc8d10830a51e1db29558f15181c68373d0095",
+                            "size": "341414090"
+                        },
+                        {
+                            "host": "i686-pc-linux-gnu",
+                            "url": "https://github.com/espressif/esp32-arduino-lib-builder/releases/download/idf-release_v5.3/esp32-arduino-libs-idf-release_v5.3-489d7a2b-v1.zip",
+                            "archiveFileName": "esp32-arduino-libs-idf-release_v5.3-489d7a2b-v1.zip",
+                            "checksum": "SHA-256:489012502218a7d30f6c312764bc8d10830a51e1db29558f15181c68373d0095",
+                            "size": "341414090"
+                        },
+                        {
+                            "host": "aarch64-linux-gnu",
+                            "url": "https://github.com/espressif/esp32-arduino-lib-builder/releases/download/idf-release_v5.3/esp32-arduino-libs-idf-release_v5.3-489d7a2b-v1.zip",
+                            "archiveFileName": "esp32-arduino-libs-idf-release_v5.3-489d7a2b-v1.zip",
+                            "checksum": "SHA-256:489012502218a7d30f6c312764bc8d10830a51e1db29558f15181c68373d0095",
+                            "size": "341414090"
+                        },
+                        {
+                            "host": "arm-linux-gnueabihf",
+                            "url": "https://github.com/espressif/esp32-arduino-lib-builder/releases/download/idf-release_v5.3/esp32-arduino-libs-idf-release_v5.3-489d7a2b-v1.zip",
+                            "archiveFileName": "esp32-arduino-libs-idf-release_v5.3-489d7a2b-v1.zip",
+                            "checksum": "SHA-256:489012502218a7d30f6c312764bc8d10830a51e1db29558f15181c68373d0095",
+                            "size": "341414090"
+                        }
                     ]
-                  },
-                  {
+                },
+                {
                     "name": "esp32-arduino-libs",
                     "version": "idf-release_v5.3-cfea4f7c-v1",
                     "systems": [

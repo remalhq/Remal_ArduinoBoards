@@ -1,0 +1,1 @@
+The arch releases have been moved to https://remal.io/remal-core/arch/<archiveFileName>.zip
